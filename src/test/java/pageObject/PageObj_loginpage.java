@@ -9,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 //by locators
 //methods or actions
 
-public class PO_loginpage {
+public class PageObj_loginpage {
 	
 	WebDriver driver;
 	
-	public PO_loginpage(WebDriver driver){     //constructor
+	public PageObj_loginpage(WebDriver driver){     //constructor
 		this.driver=driver; // assign value to the driver
 		PageFactory.initElements(driver, this); // initilising page factory
 	}
