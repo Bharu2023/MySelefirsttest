@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Testcases.baseclass;
+
 
 //by locators
 //methods or actions
@@ -18,21 +20,21 @@ public class PageObj_loginpage {
 		PageFactory.initElements(driver, this); // initilising page factory
 	}
 		
-	@FindBy(id="loginusernameID")// page factory method - by locators
-	WebElement username; // webelement is named as username
+	@FindBy(id="email")// page factory method - by locators
+	WebElement email; // webelement is named as username
 	
-	@FindBy(id="loginpasswordID")
+	@FindBy(name="password")
 	WebElement pwd;
 	
-	@FindBy(xpath="//button[contains(@class,'rounded')]")
+	@FindBy(xpath="//input[@value='Sign Up']")
 	WebElement loginbtn;
 	
 	//setup Actions or method create
-public void setUname(String uname) {   //parametrized method, setting name for username
-	username.sendKeys(uname);
+public void setEmail(String uname) {   //parametrized method, setting name for username
+	email.sendKeys(uname);
 }
-public void setpasswrd(String pswrd) {   //parametrized method
-	pwd.sendKeys(pswrd);
+public void setpasswrd(String pswd) {   //parametrized method
+	pwd.sendKeys(pswd);
 }
 public void clicklgnbtn() {   //parametrized method
 	loginbtn.click();

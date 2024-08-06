@@ -26,10 +26,10 @@ public class Readconfig {
 			String url = pro.getProperty("baseurl");
 			return url;
 		}
-		public String getusername()
+		public String getEmail()
 		{
-			String username = pro.getProperty("username");
-			return username;
+			String Email = pro.getProperty("Email");
+			return Email;
 		}
 		public String getpassword()
 		{

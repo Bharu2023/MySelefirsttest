@@ -1,8 +1,4 @@
 package Testcases;
-
-
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -19,7 +15,7 @@ public class baseclass { // declaring the variables
 	WebDriver driver;
 	Readconfig readconfig = new Readconfig(); // to create readconfig obejct to get data from readconfig file
 	String baseurl= readconfig.getApplicationURL();
-	String username = readconfig.getusername();
+	String username = readconfig.getEmail();
 	String password = readconfig.getpassword();
 	// webdriver initilising
 	@BeforeClass
